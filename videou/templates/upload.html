@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .header-bar {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        background: linear-gradient(
+          45deg,
+          #eb796f 2%,
+          #e16a60 8%,
+          #eea390 100%
+        );
+      }
+    </style>
+    <title>Upload</title>
+  </head>
+  <body>
+    <div class="mt-5">
+      <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %} {{form.as_p}}
+        <button class="btn btn-success btn-lg" type="">Upload</button>
+      </form>
+    </div>
+    <hr />
+  </body>
+</html>
